@@ -102,6 +102,8 @@ body {
 ul, 
 ol {
  list-style-type: none;
+ margin: 0;
+ padding: 0;
 }
  
 a {
@@ -146,16 +148,10 @@ address {
 }
 
 /* -------- Base Header - Footer Syles -------*/
-header,
-footer {
-  background-color: #202322;
+header {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-header {
+  background-color: #202322;
   padding: 15px 0;
 }
 
@@ -169,10 +165,6 @@ header .content-wrapper {
 
 header figure {
   width: 60%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
 }
 
 .header-divider {
@@ -187,10 +179,6 @@ header nav {
   font-size: 1.125em;
   font-weight: 700;
   text-transform: uppercase;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-flow: row wrap;
 }
 
 header nav ul {
@@ -205,8 +193,11 @@ header nav ul li {
 
 /* -------- Footer styles -------*/
 footer {
-  text-align: center;
+  display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #202322;
 }
 
 footer p {
@@ -248,7 +239,6 @@ footer .copyright {
   min-height: 500px;
   display: flex;
   justify-content: center;
-  flex-flow: row wrap;
 }
 
 .hero-area h1 {
@@ -264,8 +254,6 @@ aside {
   background-color: #527158;
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
 }
 
 /****** INPUT Styles (for form on Home page) *******/
@@ -302,7 +290,6 @@ input[type=button] {
   background-size: cover;
   display: flex;
   justify-content: center;
-  flex-flow: row wrap;
 }
 
 .features h2 {
@@ -317,7 +304,7 @@ input[type=button] {
 .features .feature-items {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-flow: row wrap;
 }
 
@@ -332,7 +319,6 @@ input[type=button] {
   background-color: #2a423a;
   display: flex;
   justify-content: center;
-  flex-flow: row wrap;
 }
 
 .reviews h2 {
@@ -351,16 +337,12 @@ input[type=button] {
   background-color: #527158;
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
 }
 
 .contact-section {
   background-color: #2a423a;
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
 }
 
 .contact-content p {
@@ -373,8 +355,6 @@ input[type=button] {
   background-color: #527158;
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
 }
 
 .faq .content-wrapper {
@@ -509,7 +489,6 @@ input[type=button] {
 
   /* Header */
   header {
-    justify-content: space-around;
     padding: 33px 0;
   }
 
@@ -551,10 +530,10 @@ input[type=button] {
   /* Aside */
 
   aside .content-wrapper {
-    padding: 50px 0;
+    margin: 50px 0;
     display: flex;
     justify-content: space-between;
-    flex-flow: row wrap;
+    align-content: flex-start;
   }
 
   aside .content-wrapper .form-description,
@@ -571,7 +550,6 @@ input[type=button] {
   
   .features article {
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-flow: column wrap;
     flex-basis: 50%;
@@ -746,12 +724,12 @@ input[type=button] {
 
   /* Reviews */
 
-  .reviews article div {
-    width: 42%;
-  }
-
   .reviews h2 {
     padding-bottom: 50px;
+  }
+
+  .reviews article div {
+    width: 42%;
   }
 
   /* Footer */
