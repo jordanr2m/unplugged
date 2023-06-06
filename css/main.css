@@ -89,7 +89,7 @@ textarea {
 
 /* -------- GLOBAL STYLES -------*/
 html {
-	font-size: 16px;
+	font-size: 1rem;
 }
  
 body {
@@ -97,6 +97,7 @@ body {
   font-size: 1em;
   text-align: left;
   color: #e2e3ed;
+  background-color: #202322;
 }
  
 ul, 
@@ -115,6 +116,7 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   font-weight: 500;
+  margin: 0;
 }
  
 h3, 
@@ -312,18 +314,17 @@ input[type=button] {
 .features .feature-items {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
   flex-flow: row wrap;
-}
-
-.features p {
-  text-align: center;
-  margin: 0;
 }
 
 .features i {
 	font-size: 3.75em;
   margin-bottom: 40px;
+}
+
+.features p {
+  text-align: center;
+  margin: 0;
 }
 
 /* Reviews */
@@ -341,7 +342,7 @@ input[type=button] {
 
 .reviews h3 {
   width: 55%;
-  padding: 20px 0;
+  margin: 20px 0;
 }
 
 /* =========== Mobile Styles - About page ============== */
@@ -355,8 +356,8 @@ input[type=button] {
 .map figure {
   width: 100%;
   height: 0;
-  overflow: hidden;
   padding-bottom: 125%;
+  overflow: hidden;
   position: relative;
 }
 
@@ -576,6 +577,10 @@ input[type=button] {
   .features h2 {
     margin-bottom: 20px;
   }
+
+  .features .feature-items {
+    align-items: flex-start;
+  }
   
   .features article {
     display: flex;
@@ -586,6 +591,10 @@ input[type=button] {
 
   .features .features-item-description {
     width: 62%;
+  }
+
+  .features i {
+    margin-bottom: 30px;
   }
 
   /* Reviews */
@@ -620,7 +629,6 @@ input[type=button] {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: row;
   }
 
   footer .contact {
@@ -646,7 +654,7 @@ input[type=button] {
   }
 
   /* ======== About Page ======== */
-
+  
   .mission-content {
     display: flex;
     justify-content: space-between;
@@ -761,7 +769,7 @@ input[type=button] {
   }
 
   /* Reviews */
-
+  
   .reviews h2 {
     padding-bottom: 50px;
   }
@@ -778,14 +786,14 @@ input[type=button] {
 
   /* ======== About Page ======== */
 
+  .map figure {
+    padding-bottom: 37.5%;
+  }
+  
   .mission h2,
   .contact-section .content-wrapper h2 {
     width: 95%;
     font-size: 3em;
-  }
-
-  .map figure {
-    padding-bottom: 37.5%;
   }
 
   .contact-content h4 {
