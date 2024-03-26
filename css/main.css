@@ -242,7 +242,6 @@ footer .copyright {
 /* -------- Mobile Styles - Homepage -------*/
 
 /* Hero area */
-
 .hero-area {
   background: url('../img/unplugged-retreat.jpg') center no-repeat #333;
   background-size: cover;
@@ -259,7 +258,6 @@ footer .copyright {
 }
 
 /* Aside */
-
 aside {
   background-color: #527158;
   display: flex;
@@ -294,7 +292,6 @@ input[type=button] {
 }
 
 /* Features */
-
 .features {
   background: url('../img/unplugged-retreat-features.jpg') center no-repeat #333;
   background-size: cover;
@@ -328,7 +325,6 @@ input[type=button] {
 }
 
 /* Reviews */
-
 .reviews {
   background-color: #2a423a;
   display: flex;
@@ -737,14 +733,12 @@ input[type=button] {
    /* ======== Homepage ========== */
 
   /* Hero Area */
-
   .hero-area h1 {
     font-size: 3.75em;
     width: 80%;
   }
 
   /* Aside */
-
   aside .content-wrapper {
     justify-content: space-around;
   }
@@ -759,7 +753,6 @@ input[type=button] {
   }
 
   /* Features */
-
   .features h2 {
     width: 90%;
   }
@@ -769,7 +762,6 @@ input[type=button] {
   }
 
   /* Reviews */
-  
   .reviews h2 {
     padding-bottom: 50px;
   }
@@ -779,7 +771,6 @@ input[type=button] {
   }
 
   /* Footer */
-
   footer h4 {
     font-size: 1.875em;
   }
