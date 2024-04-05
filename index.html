@@ -178,10 +178,14 @@
     <!--footer content-wrapper ends-->
 
     <div class="copyright">
-      <p>Copyright 202X | Unplugged</p>
+      <p>Copyright <span id="year"></span> | Unplugged</p>
     </div>
   </footer>
 
+  <script>
+    // Populate Copyright year
+    document.querySelector("#year").innerHTML = new Date().getFullYear();
+  </script>
 
   <!-- From Boilerplate -->
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
